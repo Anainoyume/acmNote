@@ -1,0 +1,33 @@
+{
+    "name": "note",
+    "title":"算法笔记",
+    "contents":[
+        {
+            "name": "P1000",
+            "title": "P1000 两数之和",
+            "text": "./P1000.md",
+            "code": "./P1000.cpp",
+            "rating": "2200",
+            "description": "这是一道简单的语法题",
+            "tags":["bfs","入门"]
+        },
+        {
+            "name": "P1002",
+            "title": "P1002 过河卒",
+            "text": "./P1000.md",
+            "code": "./P1000.cpp",
+            "rating": "2200",
+            "description": "这是一道简单的dp",
+            "tags":["dp","数论"]
+        },
+        {
+            "name": "P14514",
+            "title": "P14514 牛魔",
+            "text": "./P1000.md",
+            "code": "./P1000.cpp",
+            "rating": "2320",
+            "description": "114514",
+            "tags":["虚树"]
+        }
+    ]
+}
