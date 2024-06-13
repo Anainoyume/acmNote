@@ -25,20 +25,19 @@ int main(int __paramCount, char* __paramArgs[])
             }
 
             else if (commandCount-1 > cmd->size) {
-                alog::log(alog::ERROR,"Too many parameters.");
+                alog::log(alog::aERROR,"Too many parameters.");
             }
             else {
-                alog::log(alog::ERROR,"Too few parameters.");
+                alog::log(alog::aERROR,"Too few parameters.");
             }
         }
         else {
-            alog::log(alog::ERROR,"The command does not exist.");
+            alog::log(alog::aERROR,"The command does not exist.");
         }
     } 
     else {
-        alog::log(alog::ERROR,"Command parameters not specified.");
+        alog::log(alog::aERROR,"Command parameters not specified.");
     }
-
-
+    
     return 0;
 }

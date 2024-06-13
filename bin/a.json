@@ -1,0 +1,20 @@
+{
+    "name":"note",
+    "title":"dp训练-算法笔记",
+    "contents":[
+        {
+            "name":"P1430",
+            "title":"P1430 序列取数",
+            "url":"https://www.luogu.com.cn/problem/P1430",
+            "description":"双向dp, 运用了贪心的思想",
+            "tags":["dp","博弈论","动态规划"]
+        },
+        {
+            "name":"P4799",
+            "title":"P4799 [CEOI2015 Day2] 世界冰球锦标赛",
+            "url":"https://www.luogu.com.cn/problem/P4799",
+            "description":"双向广搜，最后合并数据的时候很妙",
+            "tags":["dp","双向广搜","搜索","meet in the middle"]
+        }
+    ]
+}

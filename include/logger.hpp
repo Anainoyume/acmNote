@@ -13,31 +13,31 @@ namespace alog
     std::tm* timeInfo = std::localtime(&nowTime);
     
     enum MessageSign {
-        SUCCESS,
-        WARNING,
-        ERROR,
-        CRITICAL,
-        FATAL,
-        INFO     
+        aSUCCESS,
+        aWARNING,
+        aERROR,
+        aCRITICAL,
+        aFATAL,
+        aINFO     
     };
 
     std::string MessageSignToString(MessageSign flag) {
-        if (flag == SUCCESS) {
+        if (flag == aSUCCESS) {
             return std::string("\e[32mSUCCESS\e[0m");
         }
-        else if (flag == WARNING) {
+        else if (flag == aWARNING) {
             return std::string("\e[33mWARNING\e[0m");
         }
-        else if (flag == ERROR) {
+        else if (flag == aERROR) {
             return std::string("\x1b[1m\e[31mERROR\e[0m");
         }
-        else if (flag == CRITICAL) {
+        else if (flag == aCRITICAL) {
             return std::string("\e[36mCRITICAL\e[0m");
         }
-        else if (flag == FATAL) {
+        else if (flag == aFATAL) {
             return std::string("\e[31mFATAL\e[0m");
         }
-        else if (flag == INFO) {
+        else if (flag == aINFO) {
             return std::string("\e[37mINFO\e[0m");
         }
         else {

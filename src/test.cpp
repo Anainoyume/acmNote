@@ -10,32 +10,34 @@ using namespace std;
 
 int main(int __paramCount, char* __paramArgs[])
 {
-    int commandCount = 2;
+    int commandCount = 4;
 
     if (commandCount > 0) {
-        string command = "create";
+        string command = "search";
         if (anote::commandMap.count(command)) {
 
             anote::Command* cmd = anote::commandMap[command];
             if (commandCount-1 == cmd->size) {
                 vector<string> args(cmd->size);
-                args[0] = "./config.json";
+                args[0] = "tag";
+                args[1] = ".";
+                args[2] = "ËÑË÷";
                 cmd->call(args);
             }
 
             else if (commandCount-1 > cmd->size) {
-                alog::log(alog::ERROR,"Too many parameters.");
+                alog::log(alog::aERROR,"Too many parameters.");
             }
             else {
-                alog::log(alog::ERROR,"Too few parameters.");
+                alog::log(alog::aERROR,"Too few parameters.");
             }
         }
         else {
-            alog::log(alog::ERROR,"The command does not exist.");
+            alog::log(alog::aERROR,"The command does not exist.");
         }
     } 
     else {
-        alog::log(alog::ERROR,"Command parameters not specified.");
+        alog::log(alog::aERROR,"Command parameters not specified.");
     }
 
 
