@@ -21,7 +21,7 @@ namespace anote
     void createNote(const string& mainPage, const string& noteName, const string& textPath, const string& codePath, const string& url, const vector<string>& tags, const string& rating) {
         string contentText = "none.";
         string contentCode = "none.";
-        string Url = "https://www.luogu.com.cn/problem/list";
+        string Url = url.empty() ? "https://www.luogu.com.cn/problem/list" : url;
         string Rating = rating.empty() ? "<none>" : rating;
 
         if (!textPath.empty()) {
